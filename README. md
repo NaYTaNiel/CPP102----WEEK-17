@@ -5,22 +5,22 @@
 **Section:** 1 CpE -- B
  
 ## Project Description
-This program monitors simulated device temperature readings for a Computer Engineering laboratory[span_2](start_span)[span_2](end_span). It stores sensor data, validates inputs, classifies each reading as NORMAL, WARNING, or CRITICAL, and generates a detailed numerical summary with an overall status indicator[span_3](start_span)[span_3](end_span).
+This program monitors simulated device temperature readings for a Computer Engineering laboratory. It stores sensor data, validates inputs, classifies each reading as NORMAL, WARNING, or CRITICAL, and generates a detailed numerical summary with an overall status indicator.
  
 ## Features
-- View all stored temperature readings with index positions[span_4](start_span)[span_4](end_span)
-- Add a new valid reading (whole numbers from 0 to 100 only)[span_5](start_span)[span_5](end_span)
-- Classify every reading based on strict boundary parameters[span_6](start_span)[span_6](end_span)
-- Generate numerical summaries, category percentages, and status reports[span_7](start_span)[span_7](end_span)
-- Robust input validation rejecting wrong menu inputs and invalid numeric ranges[span_8](start_span)[span_8](end_span)
+- View all stored temperature readings with index positions.
+- Add a new valid reading (whole numbers from 0 to 100 only).
+- Classify every reading based on strict boundary parameters.
+- Generate numerical summaries, category percentages, and status reports.
+- Robust input validation rejecting wrong menu inputs and invalid numeric ranges.
  
 ## Requirements
 - Python 3 (built-in features only, no external libraries)[span_9](start_span)[span_9](end_span)
  
 ## How to Run
-1. Open a terminal inside the Week17 folder[span_10](start_span)[span_10](end_span).
-2. Type: `python device_monitor.py`[span_11](start_span)[span_11](end_span)
-   (On macOS or Linux, type: `python3 device_monitor.py`)[span_12](start_span)[span_12](end_span)
+1. Open a terminal inside the Week17 folder.
+2. Type: `python device_monitor.py`.
+   (On macOS or Linux, type: `python3 device_monitor.py`).
  
 ## Sample Output
 
@@ -38,3 +38,13 @@ This program monitors simulated device temperature readings for a Computer Engin
 #Reading 3: 35 °C
 #Reading 4: 37 °C
 #Reading 5: 29 °C
+
+ 
+## Test Cases
+I performed 10 tests. 10 passed and 0 failed. Full details are available in `test_cases.md`.
+ 
+## Known Limitations
+- Readings entered during a session are stored in memory and reset when the program closes.
+ 
+## Reflection
+Building this project helped me integrate modular programming functions, manual numerical loops, and loop-based input validation into a complete application[span_15](start_span)[span_15](end_span). The hardest part was managing boundary conditions correctly for the warning and critical thresholds, which I resolved by refining my selection conditions. Next, I would improve the system by adding persistent file storage for historical device logs.
